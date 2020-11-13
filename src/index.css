@@ -1,0 +1,116 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+	
+}
+.loading {
+  text-align: center;
+  color: gray;
+}
+.header-style{
+	background-color: rgb(24, 136, 165);
+	height: 38vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.header-style h1{
+	text-align: center;
+	color: white;
+	font-size: 3.1rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-style2{
+	background-color: rgb(24, 136, 165);
+	height: 38vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.header-style2 h1{
+	text-align: center;
+	color: white;
+	font-size: 3.1rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width: 360px){
+	.header-style2 h1{
+	text-align: center;
+	color: white;
+	font-size: 2.1rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+}
+
+.footer{
+	height: 18vh;
+	background-color:  rgb(24, 136, 165);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer p{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	color: white;
+	
+}
+.parents-container{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 6rem;
+	align-items: center;
+	justify-items: center;
+	margin: auto;
+	padding-bottom: 1rem;
+}
+
+.details-of-card{
+	max-width: 320px;
+	margin-bottom: 1rem;
+}
+.title-rendered{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	max-width: 320px;
+	padding-bottom: 1rem;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	
+}
+.btn-container button{
+	width: 120px;
+	padding: 1rem;
+	margin: 2rem;
+	outline: none;
+	border-radius: 2rem;
+	border: none;
+background-color: rgb(24, 136, 165);
+color: white;
+}
+
+.read-more-btn{
+	background-color: transparent;
+	border: none;
+	color: rgb(24, 136, 165);
+	cursor: pointer;
+}
+.read-more-btn:hover{
+	text-transform: uppercase;
+	cursor: pointer;
+}

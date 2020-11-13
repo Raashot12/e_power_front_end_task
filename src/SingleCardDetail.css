@@ -1,0 +1,11 @@
+.headline-statement h1{
+	font-size: 1rem;
+}
+.headline-statement p{
+	color: white;
+}
+
+.article{
+	width: 60%;
+	margin: auto;
+}
