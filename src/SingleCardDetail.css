@@ -9,3 +9,39 @@
 	width: 60%;
 	margin: auto;
 }
+
+@media screen and (min-width: 1075px){
+.banner-image img{
+width:800px;
+}
+	
+}
+
+@media screen and (max-width: 1074px){
+.banner-image img{
+width:600px;
+}
+	
+}
+
+@media screen and (max-width: 414px){
+.banner-image img{
+width:250px;
+}
+	
+}
+
+@media screen and (max-width: 320px){
+.banner-image img{
+width:190px;
+}
+	
+}
+
+@media screen and (max-width: 375px){
+.banner-image img{
+width:230px;
+}
+	
+}
+

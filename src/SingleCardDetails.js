@@ -56,8 +56,8 @@ class SingleCardDetails extends Component {
         </div>
       </header>
       <div className="article" style={{paddingTop:"1rem", paddingBottom:"1.5rem"}}>
-        <div>
-          <img src={this.state.postDetails.featured_image} alt=" "  width="800px" />
+        <div className="banner-image">
+          <img src={this.state.postDetails.featured_image} alt=" " />
 
          <div contentEditable='true' dangerouslySetInnerHTML={{ __html: this.state.postDetails.content.rendered }}></div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-// The loading Component which display when my promise is yet to be fullfilled
+// The loading Component which display when my promise is yet to be fullfill
 const Loading = () => {
   return (
     <div className="loading">
