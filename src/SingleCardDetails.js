@@ -43,29 +43,52 @@ class SingleCardDetails extends Component {
     }
     return (
       <div>
-      <header className="header-style2">
-        <div>
-          <h1 className="headline-statement">
-           {this.state.postDetails.title.rendered}
-          </h1>
-          <p
-            style={{ color: "white", textAlign: "center", paddingTop: "1rem" }}
-          >
-            PUBLIISHED ON APRIL 29, 2019
-          </p>
-        </div>
-      </header>
-      <div className="article" style={{paddingTop:"1rem", paddingBottom:"1.5rem"}}>
-        <div className="banner-image">
-          <img src={this.state.postDetails.featured_image} alt=" " />
+        <header className="header-style2">
+          <div>
+            <h1 className="headline-statement">
+              {this.state.postDetails.title.rendered}
+            </h1>
+            <p
+              style={{
+                color: "white",
+                textAlign: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              PUBLIISHED ON APRIL 29, 2019
+            </p>
+          </div>
+        </header>
+        <div
+          className="article"
+          style={{ paddingTop: "1rem", paddingBottom: "1.5rem" }}
+        >
+          <div className="banner-image">
+            {/* <img src={this.state.postDetails.featured_image} alt=" " /> */}
+            <div
+              className="boxxx"
+              style={{
+                background: `url(${this.state.postDetails.featured_image})`,
+                height: "0",
+                width: "100%",
+                backgroundSize: "cover",
+				paddingTop: "56%",
+                borderRadius: "4px",
+              }}
+            ></div>
 
-         <div contentEditable='true' dangerouslySetInnerHTML={{ __html: this.state.postDetails.content.rendered }}></div>
-
+            <div
+			className="content-rendered"
+              contentEditable="true"
+              dangerouslySetInnerHTML={{
+                __html: this.state.postDetails.content.rendered,
+              }}
+            ></div>
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-    )
+    );
   }
 }
 
